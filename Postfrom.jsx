@@ -26,6 +26,7 @@ export default function Postfrom() {
   const file = e.target.files[0]
   const reader = new FileReader();
     
+//this below onload fn say that after reader has read the file as dataURL console log its result
  reader.onload = function(){
      setImage(reader.result)
      console.log(reader.result);
